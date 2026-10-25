@@ -75,5 +75,5 @@
   window.location.assign(url.toString());
   return;
 }
-show('SIGN OUT is still in preview mode. Please use the existing Microsoft Sign Out form.')}));document.getElementById('forget').addEventListener('click',()=>{clearSaved();remember.checked=false;fields.forEach(f=>f.value='');show('Saved details removed and fields cleared.')});document.getElementById('clear').addEventListener('click',()=>{fields.forEach(f=>f.value='');remember.checked=false;clearSaved();show('Fields cleared. Saved details on this phone have also been removed.')});})();
+const signOutUrl=new URL('https://forms.cloud.microsoft/Pages/ResponsePage.aspx');signOutUrl.searchParams.set('id','A-5VuLENQEWT9dpwaryP7JI35kObbvxGmH32G6NbJkJUQURKNEExWk5RQ0QzUDdOS1hURUdWTkNHWS4u');signOutUrl.searchParams.set('r23775e2a606f4c35b51e4569c8d01022',fields[0].value.trim());window.location.assign(signOutUrl.toString());}));document.getElementById('forget').addEventListener('click',()=>{clearSaved();remember.checked=false;fields.forEach(f=>f.value='');show('Saved details removed and fields cleared.')});document.getElementById('clear').addEventListener('click',()=>{fields.forEach(f=>f.value='');remember.checked=false;clearSaved();show('Fields cleared. Saved details on this phone have also been removed.')});})();
 </script>
