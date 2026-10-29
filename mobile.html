@@ -93,7 +93,7 @@
   url.searchParams.set('r2dc0f25d227d438d83079c4c3ea6e6a4',fields[0].value.trim());
   url.searchParams.set('r13a954e38ec741e786e45805612bee4c',JSON.stringify(fields[1].value));
   url.searchParams.set('r0d051854fd3f4f84abaccf928b083827', fields[2].value.trim());
-  window.location.assign(url.toString());
+ window.location.assign(url.toString().replace(/\+/g, '%20'));
   return;
 }
 const signOutUrl=new URL('https://forms.cloud.microsoft/Pages/ResponsePage.aspx');signOutUrl.searchParams.set('id','A-5VuLENQEWT9dpwaryP7JI35kObbvxGmH32G6NbJkJUQURKNEExWk5RQ0QzUDdOS1hURUdWTkNHWS4u');signOutUrl.searchParams.set('r23775e2a606f4c35b51e4569c8d01022',fields[0].value.trim());window.location.assign(signOutUrl.toString());}));document.getElementById('forget').addEventListener('click',()=>{clearSaved();remember.checked=false;fields.forEach(f=>f.value='');show('Saved details removed and fields cleared.')});document.getElementById('clear').addEventListener('click',()=>{fields.forEach(f=>f.value='');remember.checked=false;clearSaved();show('Fields cleared. Saved details on this phone have also been removed.')});})();
