@@ -59,7 +59,26 @@
 <h1>Building sign in</h1><p class="sub">Welcome to the Young Vic. Save your details on this phone to make future visits quicker.</p>
 <form id="details" autocomplete="on">
 <label class="field" for="fullName">Full name</label><input id="fullName" name="name" type="text" autocomplete="name" maxlength="120" required placeholder="Your full name">
-<label class="field" for="department">Department</label><select id="department" name="department" required><option value="">Select a department</option><option>Production</option><option>Operations</option><option>Box Office</option><option>Technical / Production</option><option>Stage Management</option><option>Creative / Visiting Company</option><option>Development</option><option>Marketing</option><option>Administration</option><option>Freelance / Contractor</option><option>Visitor</option><option>Other</option></select>
+<label class="field" for="department">Department</label><select id="department" name="department" required>
+  <option value="">Select a department</option>
+  <option>Exec / Artistic</option>
+  <option>Box Office</option>
+  <option>Cleaners</option>
+  <option>Contractors</option>
+  <option>Development</option>
+  <option>Finance</option>
+  <option>FOH</option>
+  <option>Freelance</option>
+  <option>Marketing</option>
+  <option>Operations</option>
+  <option>People</option>
+  <option>Producing</option>
+  <option>Production</option>
+  <option>Security</option>
+  <option>Show - Company</option>
+  <option>TP</option>
+  <option>Visitor</option>
+</select>
 <label class="field" for="visiting">Who are you visiting? <span class="muted">(optional)</span></label><input id="visiting" name="visiting" type="text" maxlength="120" placeholder="Name or team">
 <label class="check"><input id="remember" type="checkbox"><span><strong>Remember my details on this phone</strong><br><span class="muted">Only choose this on your own device. You can forget them at any time.</span></span></label>
 <div class="actions"><button class="in" type="button" data-action="in">SIGN IN</button><button class="out" type="button" data-action="out">SIGN OUT</button></div>
